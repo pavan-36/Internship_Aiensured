@@ -1,0 +1,36 @@
+artifact_path: model
+flavors:
+  python_function:
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.tensorflow
+    python_version: 3.9.7
+  tensorflow:
+    code: null
+    data: data
+    keras_version: 2.12.0
+    model_type: keras
+    save_format: tf
+mlflow_version: 2.4.1
+model_uuid: c13fc8ea839c477ebd8994b31fed4d86
+run_id: e580c354ad3045c58d6d8949147fe48f
+signature:
+  inputs: '[{"name": "age", "type": "tensor", "tensor-spec": {"dtype": "int64", "shape":
+    [-1]}}, {"name": "sex", "type": "tensor", "tensor-spec": {"dtype": "int64", "shape":
+    [-1]}}, {"name": "cp", "type": "tensor", "tensor-spec": {"dtype": "int64", "shape":
+    [-1]}}, {"name": "trestbps", "type": "tensor", "tensor-spec": {"dtype": "int64",
+    "shape": [-1]}}, {"name": "chol", "type": "tensor", "tensor-spec": {"dtype": "int64",
+    "shape": [-1]}}, {"name": "fbs", "type": "tensor", "tensor-spec": {"dtype": "int64",
+    "shape": [-1]}}, {"name": "restecg", "type": "tensor", "tensor-spec": {"dtype":
+    "int64", "shape": [-1]}}, {"name": "thalach", "type": "tensor", "tensor-spec":
+    {"dtype": "int64", "shape": [-1]}}, {"name": "exang", "type": "tensor", "tensor-spec":
+    {"dtype": "int64", "shape": [-1]}}, {"name": "oldpeak", "type": "tensor", "tensor-spec":
+    {"dtype": "float64", "shape": [-1]}}, {"name": "slope", "type": "tensor", "tensor-spec":
+    {"dtype": "int64", "shape": [-1]}}, {"name": "ca", "type": "tensor", "tensor-spec":
+    {"dtype": "int64", "shape": [-1]}}, {"name": "thal", "type": "tensor", "tensor-spec":
+    {"dtype": "object", "shape": [-1]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1,
+    1]}}]'
+utc_time_created: '2023-07-04 03:58:52.764938'

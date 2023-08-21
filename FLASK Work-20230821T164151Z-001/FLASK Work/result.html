@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/my_style.css') }}">
+</head>
+<section id="nav-bar">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+<a class="navbar-brand font-weight-bold" href="">HEART DISEASE PREDICTION</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="True" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item active">
+<a class="nav-link" type="button" color="red" href="./home.html" style="color: red">Home <span class="sr-only">(current)</span></a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="https://aiensured.com/ " style="color: red">AiEnsured</a>
+</li>
+
+</ul>
+</div>
+</nav>
+</section>
+<br>
+<br>
+<style>
+body {background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCSe3pqWag-T4CCQpuQKkIwzDSlaS8O6BLh3rZCBOm_g&s');
+background-repeat: repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+/* CSS code for button */
+.button_css {
+color: #494949 !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #ffffff;
+padding: 20px;
+border: 4px solid #494949 !important;
+display: inline-block;
+transition: all 0.4s ease 0s;
+}
+.button_css:hover {
+color: #ffffff !important;
+background: #f6b93b;
+border-color: #f6b93b !important;
+transition: all 0.4s ease 0s;
+}
+</style>
+<body>
+<header >
+<div class="container" style="color: black">
+<div id="brandname" >
+<h2>   <center>      Heart Disease  </center></h3>
+</div>
+</div>
+</header>
+<h3 style="color:blue;font-size:30;text-align: center;"><b>Prediction </b></h3>
+<div class="results">
+<center       >
+<div class="container">
+{% if prediction >= 0.5%}
+<h2 style="color:red;" >YES! You might have a  heart Disease.<br><h1>Do consult to Doctor.</h1></h2>
+{% elif prediction < 0.5%}
+<h2 style="color:green;">NO! You might not have a heart Disease.<br><h1>Healthy Heart</h2>
+<ol class="col-4 " style="background-color: red ">
+{% endif %}
+</div>
+<br>
+<div class="col-6">
+<IMG SRC="https://media.istockphoto.com/id/1221608688/photo/medical-technology-concepts-robot-hand-holding-heart.jpg?s=612x612&w=0&k=20&c=8fQc2Y-gquq73PFXxRkQ4vGHJhLhQ6gcteP7ML4U9MI=" width=600px height= 400px style="background-blend-mode: all;">
+</div>
+</center>
+<br>
+</body>
+</html>
